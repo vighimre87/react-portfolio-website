@@ -1,0 +1,47 @@
+/* Hero Banner */
+#heroGrid {
+    background-image: var(--bckgrnd-transition), url("https://i.imgur.com/HN8UVXd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hero-image hero-text";
+  }
+  
+  #hero-image {
+    grid-area: hero-image;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  #hero-image img {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  #hero-text {
+    grid-area: hero-text;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  #hero-text h2 {
+    font-size: 30px;
+    color: var(--bckgrnd-blck);
+    background-color: var(--cyan-color);
+    padding: 5px;
+  }

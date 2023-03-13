@@ -1,0 +1,21 @@
+/* About Me section */
+#about {
+    display: grid;
+    grid-template-columns: 5% 5% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "aboutHeading first-line aboutText";
+    justify-items: center;
+}
+
+#aboutHeading {
+    grid-area: aboutHeading;
+    display: flex;
+}
+
+#first-line {
+  grid-area: first-line;
+}
+
+#aboutText {
+    grid-area: aboutText;
+}

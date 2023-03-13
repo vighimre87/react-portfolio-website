@@ -11,3 +11,159 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Variables */
+:root {
+  --cyan-color: rgb(92, 154, 161);
+  --bckgrnd-blck: rgb(55, 45, 45);
+  --bckgrnd-transition: linear-gradient(rgba(49, 109, 144, 0.349), rgba(49, 109, 144, 0.349));
+}
+
+
+/* General CSS rules */
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5rem;
+    color: var(--bckgrnd-blck);
+    background-color: rgb(233, 239, 241);
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+  
+p {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Styling the main content */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-section {
+  width: 100%;
+  height: 100%;
+  padding: 50px 30px 50px 30px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.vertical-line {
+  border-left: 5px solid var(--cyan-color);
+  width: 100%;
+}
+
+.sectionHeading h2 {
+  text-align: right;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  #about {
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "aboutHeading"
+    "aboutText";
+  }
+
+  #work {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "workHeading"
+    "workGrid";
+    justify-items: center;
+  }
+
+  #workGrid {
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "rock-paper-scissors"
+  "travel-california"
+  "css-snippets"
+  "landing-page"
+  "prework";
+  justify-content: center;
+  }
+
+  #contact {
+    grid-template-rows: 50px auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "contact-heading"
+    "contactGrid";
+  }
+
+  #contactGrid {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "website"
+    "github"
+    "twitter"
+    "email";
+    justify-items: center;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .nav-links {
+    display: none;
+  }
+
+  #hero-image {
+    display: none;
+  }
+
+  #heroGrid {
+    justify-items: center;
+    align-items: center;
+  }
+}
