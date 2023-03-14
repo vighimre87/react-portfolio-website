@@ -3,12 +3,12 @@ import "./index.css";
 
 function About() {
     return (
-        <section class="page-section container" id="about">
-      <div class="sectionHeading" id="aboutHeading">
-        <h2 class="">About Me</h2>
+        <section className="page-section container" id="about">
+      <div className="sectionHeading" id="aboutHeading">
+        <h2 className="">About Me</h2>
       </div>
-      <div class="vertical-line" id="first-line"></div>
-      <div class="sectionContent" id="aboutText">
+      <div className="vertical-line" id="first-line"></div>
+      <div className="sectionContent" id="aboutText">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum sapien vel maximus mollis.
         Nullam ut ornare ipsum, ut lacinia mauris. In tincidunt vehicula mi, eu ultrices risus lobortis eget.
         Etiam vestibulum venenatis justo et convallis. Cras aliquet enim nec sapien interdum elementum.

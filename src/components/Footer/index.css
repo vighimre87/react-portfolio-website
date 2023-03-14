@@ -1,0 +1,11 @@
+footer {
+    background-color: var(--bckgrnd-blck);
+    padding: 20px 20px 20px 0px;
+    height: 100%;
+    width: 100%;
+  }
+
+  footer > p {
+    text-align: center;
+    color: var(--cyan-color);
+  }

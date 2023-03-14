@@ -4,13 +4,13 @@ import "./index.css";
 function Header() {
     return (
         <header>
-    <nav class="nav">
-      <div class="nav-header">
-        <div class="nav-title">
+    <nav className="nav">
+      <div className="nav-header">
+        <div className="nav-title">
           <h1>Imre Vigh</h1>
         </div>
       </div>
-      <div class="nav-links">
+      <div className="nav-links">
         <a href="#about">About Me</a>
         <a href="#work">Projects</a>
         <a href="#contact">Contact Me</a>
