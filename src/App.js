@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-// import Home from './pages/Home';
-import Project from './components/Project/Project';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
   return (
     <div>
-      {/* <Home /> */}
-      <Project />
+      <Home />
+      <Projects />
     </div>
   );
 }
