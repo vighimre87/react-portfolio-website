@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
       <Header />
-      <Home />
-      <Projects />
+      {/* <Home /> */}
+      {/* <Projects /> */}
       <Contact/>
       <Footer />
     </div>

@@ -112,26 +112,6 @@ a {
     "aboutText";
   }
 
-  #work {
-    grid-template-rows: auto auto;
-    grid-template-columns: auto;
-    grid-template-areas:
-    "workHeading"
-    "workGrid";
-    justify-items: center;
-  }
-
-  #workGrid {
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: auto;
-  grid-template-areas:
-  "rock-paper-scissors"
-  "travel-california"
-  "css-snippets"
-  "landing-page"
-  "prework";
-  justify-content: center;
-  }
 
   #contact {
     grid-template-rows: 50px auto;
@@ -147,7 +127,7 @@ a {
     grid-template-areas:
     "website"
     "github"
-    "twitter"
+    "linkedin"
     "email";
     justify-items: center;
   }

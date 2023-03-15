@@ -15,8 +15,8 @@ function ContactLinks() {
         <div className="contact-grid-element" id="github">
           <a href="https://github.com/vighimre87">GitHub</a>
         </div>
-        <div className="contact-grid-element" id="twitter">
-          <a href="https://twitter.com/VighImi">Twitter</a>
+        <div className="contact-grid-element" id="linkedin">
+          <a href="https://www.linkedin.com/in/imrevigh/">Linkedin</a>
         </div>
         <div className="contact-grid-element" id="email">
           <a href="mailto:vighimre87@gmail.com">Email</a>
