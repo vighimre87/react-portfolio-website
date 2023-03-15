@@ -18,8 +18,8 @@ header {
   
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 25px;
-    color: var(--bckgrnd-blck);
+    font-size: 25px !important;
+    color: var(--bckgrnd-blck) !important;
     padding: 10px 10px 10px 50px;
     background-color: var(--cyan-color);
   }
