@@ -1,23 +1,24 @@
 import React from "react";
+import './index.css';
 
 function ContactLinks() {
     return (
-        <section class="page-section container" id="contact">
-      <div class="sectionHeading">
+        <section className="page-section container" id="contact">
+      <div className="sectionHeading">
         <h2 id="contact-heading">Contact Me</h2>
       </div>
-      <div class="vertical-line" id="third-line"></div>
-      <div class="sectionContent" id="contactGrid">
-        <div class="contact-grid-element" id="website">
-          <a href="#">Website</a>
+      <div className="vertical-line" id="third-line"></div>
+      <div className="sectionContent" id="contactGrid">
+        <div className="contact-grid-element" id="website">
+          <a href="https://vighimre87.github.io/Bootstrap-Portfolio/">Website</a>
         </div>
-        <div class="contact-grid-element" id="github">
+        <div className="contact-grid-element" id="github">
           <a href="https://github.com/vighimre87">GitHub</a>
         </div>
-        <div class="contact-grid-element" id="twitter">
+        <div className="contact-grid-element" id="twitter">
           <a href="https://twitter.com/VighImi">Twitter</a>
         </div>
-        <div class="contact-grid-element" id="email">
+        <div className="contact-grid-element" id="email">
           <a href="mailto:vighimre87@gmail.com">Email</a>
         </div>
       </div>
