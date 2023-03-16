@@ -1,45 +1,39 @@
 import React from "react";
 import "./index.css";
-import {Link, NavLink} from 'react-router-dom';
 
-function Header() {
+function Header(props) {
     return (
-        <header>
+        <div>
     <nav className="nav">
       <div className="nav-header">
         <div className="nav-title">
-          <Link to="/">
           <h1>Imre Vigh</h1>
-          </Link>
         </div>
       </div>
       <div className="nav-links">
-        <a className="nav-link" href="#home">
-          <NavLink to='/'
-                    end
-                    className={({isActive}) =>
-                      isActive ? 'nav-link active' : 'nav-link'}>
+        <a className={({isActive}) =>
+                      isActive ? 'nav-link active' : 'nav-link'}
+                      href="/home"
+                      onClick={() => props.handlePageChange("Home")}> 
             Home
-          </NavLink>
         </a>
-        <a className="nav-link" href="#projects">
-          <NavLink to='/projects'
-                    end
-                    className={({isActive}) =>
-                      isActive ? 'nav-link active' : 'nav-link'}>
+        <a className={({isActive}) =>
+                      isActive ? 'nav-link active' : 'nav-link'}
+                      href="/projects"
+                      onClick={() => props.handlePageChange("Projects")}>
             Projects
-          </NavLink></a>
-        <a className="nav-link" href="#contact">
-          <NavLink to='/contact'
-                    end
-                    className={({isActive}) =>
-                      isActive ? 'nav-link active' : 'nav-link'}>
+          </a>
+        <a className={({isActive}) =>
+                      isActive ? 'nav-link active' : 'nav-link'}
+                      href="/contact"
+                      onClick={() => props.handlePageChange("Contact")}
+                      >
             Contact
-          </NavLink></a>
+            </a>
         <a className="nav-link" href="files/Resume-Imre-Vigh.pdf" download="">Resume</a>
       </div>
     </nav>
-  </header>
+  </div>
     );
 }
 

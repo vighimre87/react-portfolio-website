@@ -1,29 +1,38 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Footer from './components/Footer/Footer';
-import Wrapper from './components/Wrapper/Wrapper';
+// import Wrapper from './components/Wrapper/Wrapper';
 
 function App() {
+
+  const [currentpage, setCurrentPage] = useState("Home");
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const renderPage = () => {
+    if(currentpage === "Home") {
+      return <Home />;
+    } else if (currentpage === "Projects") {
+      return <Projects />;
+    } else {
+      return <Contact />;
+    }
+  }
   return (
-    <Router>
-      <div>
-      <Header />
-      <Wrapper>
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/home' element={<Home/>} />
-          <Route path='/projects' element={<Projects/>} />
-          <Route path='/contact' element={<Contact/>} />
-        </Routes>
-      </Wrapper>
-      <Footer />
+    <div>
+      <Header
+      currentpage={currentpage}
+      handlePageChange={handlePageChange}
+      />
+      {renderPage()}
+      <Footer/>
     </div>
-    </Router>
   );
 }
 
