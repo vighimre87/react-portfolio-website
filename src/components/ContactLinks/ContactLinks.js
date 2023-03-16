@@ -4,9 +4,6 @@ import './index.css';
 function ContactLinks() {
     return (
         <section className="page-section container" id="contact">
-      <div className="sectionHeading">
-        <h2 id="contact-heading">Contact Me</h2>
-      </div>
       <div className="vertical-line" id="third-line"></div>
       <div className="sectionContent" id="contactGrid">
         <div className="contact-grid-element" id="website">

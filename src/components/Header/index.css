@@ -1,5 +1,5 @@
 /* Header with Navbar */
-header {
+.header {
     background-color: var(--bckgrnd-blck);
     padding: 20px 20px 20px 0px;
     height: 100%;

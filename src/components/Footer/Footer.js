@@ -4,7 +4,7 @@ import "./index.css";
 function Footer() {
     return (
         <footer>
-      <p>© 2022 Copyright: <strong>Imre Vigh</strong></p>
+      <p>© 2023 Copyright: <strong>Imre Vigh</strong></p>
         </footer>
     );
 }

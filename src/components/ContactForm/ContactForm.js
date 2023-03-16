@@ -54,6 +54,7 @@ const handleFormSubmit = (e) => {
 
     return (
         <div className="container">
+          <h2>Contact Me</h2>
   <form id="contact-form">
 
     <label>Your Name</label>
