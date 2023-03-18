@@ -1,52 +1,52 @@
 /* Contact section */
 #contact {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 5% 5% 80%;
-    grid-template-areas:
-    "contact-heading third-line contactGrid";
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 5% 5% 80%;
+  grid-template-areas:
+  "contact-heading third-line contactGrid";
 }
 
 #contact-heading {
-  grid-area: contact-heading;
+grid-area: contact-heading;
 }
 
 #third-line {
-  grid-area: third-line;
+grid-area: third-line;
 }
 
 #contactGrid {
-  grid-area: contactGrid;
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-areas:
-  "website github linkedin email";
+grid-area: contactGrid;
+display: grid;
+grid-template-rows: 100%;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-areas:
+"website github linkedin email";
 }
 
 #website {
-  grid-area: website;
+grid-area: website;
 }
 
 #github {
-  grid-area: github;
+grid-area: github;
 }
 
 #twitter {
-  grid-area: twitter;
+grid-area: twitter;
 }
 
 #email {
-  grid-area: email;
+grid-area: email;
 }
 
 .contact-grid-element a {
-  color: var(--bckgrnd-blck);
-  font-size: 16px;
-  border-bottom: 3px solid var(--bckgrnd-blck);
+color: var(--bckgrnd-blck);
+font-size: 16px;
+border-bottom: 3px solid var(--bckgrnd-blck);
 }
 
 .contact-grid-element a:hover {
-  background-color: rgba(87, 168, 144, 0.336);
-  padding: 5px;
+background-color: rgba(87, 168, 144, 0.336);
+padding: 5px;
 }

@@ -1,45 +1,45 @@
 /* Header with Navbar */
 .header {
-    background-color: var(--bckgrnd-blck);
-    padding: 20px 20px 20px 0px;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .nav {
-    height: 50px;
-    width: 100%;
-    position: relative;
-  }
-  
-  .nav > .nav-header {
-    display: inline;
-  }
-  
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 25px !important;
-    color: var(--bckgrnd-blck) !important;
-    padding: 10px 10px 10px 50px;
-    background-color: var(--cyan-color);
-  }
-  
-  
-  /* Styling the nav links */
-  .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 20px;
-  }
-  
-  .nav > .nav-links > a {
-    display: inline-block;
-    padding: 15px 10px 15px 10px;
-    color: var(--cyan-color);
-    border-bottom: 3px solid var(--cyan-color);
-  }
-  
-  /* Hover effect on the nav-links */
-  .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+  background-color: var(--bckgrnd-blck);
+  padding: 20px 20px 20px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 25px !important;
+  color: var(--bckgrnd-blck) !important;
+  padding: 10px 10px 10px 50px;
+  background-color: var(--cyan-color);
+}
+
+
+/* Styling the nav links */
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
+  color: var(--cyan-color);
+  border-bottom: 3px solid var(--cyan-color);
+}
+
+/* Hover effect on the nav-links */
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}

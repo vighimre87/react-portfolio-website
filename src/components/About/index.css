@@ -1,5 +1,6 @@
 /* About Me section */
 #about {
+    /* width: 90%; */
     display: grid;
     grid-template-columns: 5% 5% 80%;
     grid-template-rows: 100%;
@@ -18,4 +19,12 @@
 
 #aboutText {
     grid-area: aboutText;
+}
+
+#aboutText > h2 {
+    padding-bottom: 35px;
+}
+
+#aboutText > p {
+    font-size: 15px;
 }

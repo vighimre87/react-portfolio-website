@@ -1,8 +1,9 @@
+
 .projectWrapper > h2 {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .grid { 
@@ -17,8 +18,8 @@
     }
 
   .grid > article {
-    border: 1px solid rgb(26, 26, 26);
-    box-shadow: 2px 2px 6px 0px  rgba(8, 3, 3, 0.4);
+    border: 1px solid rgb(97, 96, 96);
+    box-shadow: 2px 2px 6px 0px  rgba(22, 21, 21, 0.4);
     width: 300px;
     height: 400px;
   }
@@ -39,10 +40,18 @@
     text-align: center;
   }
 
+  .text > p > strong > a {
+    color: rgb(74, 74, 180);
+  }
+
   .text > button {
-    background: gray;
+    background: rgb(92, 154, 161);
     border: 0;
-    color: white;
     padding: 10px;
     width: 100%;
+    }
+
+    .text > button > a {
+      color: antiquewhite;
+      font-size: 14px;
     }
