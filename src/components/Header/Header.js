@@ -30,7 +30,7 @@ function Header(props) {
                       >
             Contact
             </a>
-        <a className="nav-link" href="Resume-Imre-Vigh.pdf" download="">Resume</a>
+        <a className="nav-link" href="IMRE_VIGH_Resume.pdf" download="">Resume</a>
       </div>
     </nav>
   </div>
