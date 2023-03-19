@@ -11,13 +11,15 @@ input[type=text], textarea {
 }
 
 #message {
-  height: 200px;
+  height: 100px;
   max-height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial, sans-serif';
 }
 
 /* Style the submit button with a specific background color etc */
 button {
-  background-color: #04AA6D;
+  float: right;
+  background-color: #3a46b5;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -27,15 +29,30 @@ button {
 
 /* When moving the mouse over the submit button, add a darker green color */
 button:hover {
-  background-color: #45a049;
+  background-color: #263675;
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.formContainer {
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
-  margin: 50px;
   justify-content: center;
+}
+
+#contact-form > h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.error {
+  color: rgb(136, 34, 34);
+}
+
+.success {
+  color: rgb(37, 110, 37);
 }
