@@ -19,13 +19,10 @@ const handleInputChange = (e) => {
   const inputValue = target.value;
 
   if(inputType === 'yourName') {
-    console.log(yourName);
     setYourName(inputValue);
   } else if (inputType === 'email') {
-    console.log(email);
     setEmail(inputValue);
   } else {
-    console.log(message);
     setMessage(inputValue);
   }
 };
@@ -37,21 +34,18 @@ const handleFormSubmit = (e) => {
   const feedback = document.querySelector('.feedback');
   
   if (!validateName(yourName)) {
-    console.log("Your name is not valid!");
     feedback.classList.remove('success');
     feedback.classList.add('error');
     setErrorMessage("Please provide a valid name!");
     return;
   }
   if (!validateEmail(email)) {
-    console.log("Your email is not valid");
     feedback.classList.remove('success');
     feedback.classList.add('error');
     setErrorMessage("Your email is invalid, please provide a valid email address!");
     return;
   }
   if (message === '') {
-    console.log("You didn't type anything in the message field.");
     feedback.classList.remove('success');
     feedback.classList.add('error');
     setErrorMessage("Please provide a message!");

@@ -1,13 +1,15 @@
+/* Idea has been taken from https://www.w3schools.com/howto/howto_css_contact_form.asp */
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  width: 100%;
+  padding: 12px;
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  /* Allow the user to vertically resize the textarea */
+  resize: vertical;
 }
 
 #message {
@@ -16,7 +18,7 @@ input[type=text], textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial, sans-serif';
 }
 
-/* Style the submit button with a specific background color etc */
+
 button {
   float: right;
   background-color: #3a46b5;
@@ -49,10 +51,12 @@ button:hover {
   padding-bottom: 35px;
 }
 
+/* When the user type invalid input in the form, the message in the feedback area is red */
 .error {
   color: rgb(136, 34, 34);
 }
 
+/* When the user type valid input in the form, the message in the feedback area will be green */
 .success {
   color: rgb(37, 110, 37);
 }
