@@ -31,7 +31,7 @@ const handleInputChange = (e) => {
 };
 
 // Validate user input and in case invalid input displays an error message at the bottom
-// I f all the fields are correct the errorMessage will be a welcome message
+// If all the fields are correct the errorMessage will be a welcome message
 const handleFormSubmit = (e) => {
   e.preventDefault();
   const feedback = document.querySelector('.feedback');

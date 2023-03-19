@@ -1,9 +1,9 @@
-# Team_Profile-Generator
+# React Portfolio Website
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-It is a portfolio website made with React JS and CSS without any frameworks.
+It is my previous CSS portfolio website recreated with React JS and CSS. You can find infomration about the author, recent projects and contact information.
 
 ## Table of Contents
   - [Installation](#installation)
@@ -31,13 +31,27 @@ It is a portfolio website made with React JS and CSS without any frameworks.
   ``` 
 
 ## Usage
-As a user when you open the website in your browser you will find a header with a navbar containing the corresponding links to different component of the website, a jumbotron with a photo and a quote, an about section that briefly introduce the author and a footer. The header and a footer are rendered accross the entire website while the other components are changing. If you click on the Projects link in the navbar it will take you to the Projects page that will be dinamically rendered as the Contact page. The Projects page consists of six projects of the author with the title of the project, a link to the GitHub repository and a link to the deployed application. All the project information are coming from the Project component that gets the data from a JSON file. The Contact page contains contact information of the author and it has a contact form as well which uses React Hooks for handling events. The navbar also contains a link to the Resume that lets you download the author's resume with up-to-date projects and professional experience.
+As a user when you open the website in your browser you will find a header with a navbar containing the corresponding links to different components of the website, a jumbotron with a photo and a quote, an about section that briefly introduce the author and a footer. The header and a footer are rendered accross the entire website while the other components are changing. If you click on the Projects link in the navbar it will take you to the Projects page that will be dinamically rendered as the Contact page too. The Projects page consists of six projects of the author with the title of the project, a link to the GitHub repository and a link to the deployed application. All the project information are coming from the Project component that gets the data from a JSON file. The Contact page contains contact information of the author and it has a contact form as well which uses React Hooks for handling events. The navbar also contains a link to the Resume that lets you download the author's resume with up-to-date projects and professional experience.
+
+Please see a mockup image of the Home page:
 
   <br>
-  <img src="assets/Team-Profile-Generator-mockup.png" alt="Mockup image of a sample HTML file created with the application" style="width:500px;"/>
+  <img src="src/images/react-portfolio-website-home.png" alt="Mockup image of the home page" style="width:500px;"/>
   <br>
 
-  You can see a sample html file in the output folder that has been created with the application. Please refer to the team.html file.
+On the next image you can see a demonstration of the Projects page:
+
+<br>
+  <img src="src/images/react-portfolio-website-projects.png" alt="Mockup image of the projects page" style="width:500px;"/>
+<br>
+
+Finally you can see an image of the Contact page:
+
+<br>
+  <img src="src/images/react-portfolio-website-contact.png" alt="Mockup image of the contact page" style="width:500px;"/>
+<br>
+
+
 
 ## Contributing
   Any contribution is greatly appreciated.
